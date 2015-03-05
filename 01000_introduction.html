@@ -1,0 +1,189 @@
+<style>
+  body {
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 130%;
+  }
+
+  section {
+    font-size: 86.66%;
+  }
+
+  h2 {
+    color: #707070;
+    font-style: italic;
+  }
+
+  pre, p, ul {
+    font-size: 1rem;
+  }
+
+  .code-container:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+
+  .code-container.two {
+    display: block;
+  }
+  .code-container.two .code {
+    display: inline-block;
+    float: right;
+    width: 50%;
+  }
+  .code-container.two .output {
+    display: inline;
+  float: right;
+  width: 50%;
+  }
+</style>
+
+<article>
+  <header>
+    <h1>Introduction</h1>
+    <p>
+      This series covers introductory programming topics:
+    </p>
+    <ul>
+      <li>Lesson 0: Thinking in Code</li>
+      <li>Lesson 1: Simple Data Types, Input and Output</li>
+      <li>Lesson 2: Collections and Data Transformation</li>
+      <li>Lesson 3: Logic and Flow Control</li>
+      <li>Lesson 4: Classes and Instances</li>
+    </ul>
+  </header>
+  <section>
+    <h1>Some Advice</h1>
+    <p>
+      I will not hand-hold individuals. Good programmers learn to independently face and solve problems. My presented challenges are solvable through google-fu.
+    </p>
+  </section>
+</article>
+<article>
+  <header>
+    <h1>Lesson 0: Thinking in Code</h1>
+    <p>
+      Programming is teaching <em>computations</em> and <em>logic</em> to computers given some assumptions:
+    </p>
+    <ol>
+      <li>
+        <strong>Computers are dumb.</strong>
+        <p>Computers follow <em>instructions</em>.</p>
+        <p>If you teach a computer incorrectly, then it will perform incorrectly. Garbage In? Garbage Out.</p>
+      </li>
+      <li>
+        <strong>Computers are fast.</strong> 
+        <p>When taught correctly, computers outpace the fastest of humans. Computers are the chess champions of the world for a reason!</p>
+      </li>
+      <li>
+        <strong>Computers are reliable.</strong>
+        <p>A computer will correctly follow your instructions! You should not assume your logic will be ignored.</p>
+      </li>
+    </ol>
+  </header>
+  
+  <section>
+    <header>
+      <h1>Building Blocks</h1>
+    </header>
+    <section>
+      <h1>Hardware</h1>
+      <p>At the end of the day, our software runs on physical or virtual hardware. For the purposes of this text, this hardware contains two components:</p>
+      <ul>
+        <li>
+          Memory: An infinitely large data-store.
+          <ul>
+            <li>Contains Code and Data</li>
+          </ul>
+        </li>
+        <li>CPU: Processes memory's operations and data.</li>
+      </ul>
+      
+      <h2>Memory</h2>
+      <p>
+        
+      </p>
+
+      <p>Our code is usually <em>compiled</em> from a human-readable language to machine-readable bits.</p>
+      <p>Consider the human-readable and contrived machine-readable code that follows:</p>
+      <div class="code-container two"><pre class="code"><code>section .data
+  DEFINE done_text "Done!"
+
+section .code
+  STORE i, 0
+begin: 
+  COMPARE i, 5
+  JUMPIFEQUAL end
+  INCREMENT i
+  PUSH i
+  CALL console_log
+  JUMP begin
+end:
+  PUSH done_text
+  CALL console_log
+  EXIT</code></pre><pre class="code"><code>i = 0;
+while (i != 5) {
+  i = i + 1;
+  console.log(i);
+}
+console.log("Done!");</code></pre>
+      <pre class="output"><code>Output:
+1
+2
+3
+4
+5</code></pre>
+      </div>
+      <p>
+        Which would you rather write? Of course, the first!
+      </p>
+    </section>
+    <section>
+      <h1>Software</h1>
+      <p>In this writing we will attempt to understand software from the abstract hardware level upward.</p>
+      <p>For now we consider two building blocks in software: code and data. Data is either variable or constant, code represents the steps we take to process data.</p>
+      <p>Below the concepts of operations and data, we have <em>Data Types</em>, the representation of </p>
+    </section>
+    <section>
+      <h1>Variables</h1>
+      <p>
+        
+      </p>
+      <h2>Local Variables</h2>
+    </section>
+  </section>
+
+  <section>
+    <h1>Procedural Thinking</h1>
+    <p>
+       In <em>Procedural Programming</em>, we teach computers to crunch through tasks step-by-step. Let's teach this by example:
+    </p>
+   <pre><code>
+      ages = [21, 24, 17, 29, 14];
+   </code></pre>
+    <p>
+      How would you find the average age? 
+    </p>
+
+    <ul>
+      <li>Lesson 1: Simple Data Types, Input and Output</li>
+      <li>Lesson 2: Collections and Data Transformation</li>
+      <li>Lesson 3: Logic and Flow Control</li>
+      <li>Lesson 4: Classes and Instances</li>
+    </ul>
+  </section>
+  <p>
+    I do not hand-hold individuals. Good programmers independently face and solve challenges.
+  </p>
+</article>
